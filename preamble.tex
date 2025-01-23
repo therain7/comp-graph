@@ -1,0 +1,35 @@
+\usepackage{svg}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc,shapes,positioning,tikzmark}
+
+\newcounter{tmkcount}
+
+\tikzset{
+    use tikzmark/.style={
+            remember picture,
+            overlay,
+            execute at end picture={
+                    \stepcounter{tmkcount}
+                },
+        },
+    tikzmark suffix={-\thetmkcount}
+}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+
+\definecolor{eclipseGreen}{RGB}{63,127,95}
+
+\makeatletter
+\makeatother
+
+\usepackage[autostyle]{csquotes}
+\usepackage{totcount}
+\usepackage{setspace}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+
+\newcommand{\inc}[1]{
+    \graphicspath{{./#1}}
+    \include{#1/main}
+}

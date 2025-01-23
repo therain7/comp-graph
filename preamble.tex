@@ -19,6 +19,15 @@
 \usepackage{multirow}
 \usepackage{siunitx}
 
+\usepackage[most]{tcolorbox}
+\newtcolorbox{callout}[2][]{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    fonttitle=\bfseries,
+    title=#2,
+    #1
+}
+
 \definecolor{eclipseGreen}{RGB}{63,127,95}
 
 \makeatletter

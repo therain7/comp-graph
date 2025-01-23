@@ -1,0 +1,24 @@
+name: Build and upload LaTeX document
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout tree
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          make depext
+
+      - name: Build document
+        run: make build
+
+      - name: Upload document
+        uses: actions/upload-artifact@v4
+        with:
+          name: comp-graph-notes
+          path: comp.pdf

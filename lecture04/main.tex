@@ -24,9 +24,11 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{voronoi-diagram.png}
+    \includegraphics[width=0.75\linewidth]{voronoi-diagram.jpg}
     \caption{Диаграмма Вороного}
 \end{figure}
+
+\newpage
 
 \subsubsection*{Триангуляция Делоне}
 
@@ -45,17 +47,17 @@
 Диаграмма Вороного имеет взаимно-однозначное соответствие с триангуляцией Делоне. Если соединить рёбрами точки, области Вороного которых граничат друг с другом, полученный граф будет являться триангуляцией Делоне.
 
 \begin{figure}[H]
-    \begin{center}
-        \begin{minipage}[h]{0.45\linewidth}
-            \includegraphics[width=1\linewidth]{delaunay-circumcircles-centers.png}
-            \caption{Триангуляция Делоне со всеми описанными окружностями и их центрами (красными).}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.45\linewidth}
-            \includegraphics[width=1\linewidth]{delaunay-voronoi.png}
-            \caption{Соединение центров описанных окружностей дает диаграмму Вороного (красного цвета).}
-        \end{minipage}
-    \end{center}
+\begin{center}
+\begin{minipage}[h]{0.45\linewidth}
+    \includegraphics[width=1\linewidth]{delaunay-circumcircles-centers.png}
+    \caption{Триангуляция Делоне со всеми описанными окружностями и их центрами (красными).}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.45\linewidth}
+    \includegraphics[width=1\linewidth]{delaunay-voronoi.png}
+    \caption{Соединение центров описанных окружностей дает диаграмму Вороного (красного цвета).}
+\end{minipage}
+\end{center}
 \end{figure}
 
 \subsubsection*{Применение в решении}
@@ -90,52 +92,11 @@ $O(N \log N)$.
 
 \textbf{Алгоритм Форчуна} — это алгоритм заметающей прямой для генерации диаграммы Вороного из набора точек на плоскости за время $O(n \log n)$ с использованием памяти $O(n)$.
 
-\begin{figure}[H]
-    \begin{center}
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-00.jpg}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-01.jpg}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-02.jpg}
-        \end{minipage}
-    \end{center}
-\end{figure}
 
 \begin{figure}[H]
-    \begin{center}
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-03.jpg}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-04.jpg}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-05.jpg}
-        \end{minipage}
-    \end{center}
-\end{figure}
-
-\begin{figure}[H]
-    \begin{center}
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-19.jpg}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-20.jpg}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[h]{0.3\linewidth}
-            \includegraphics[width=1\linewidth]{fortunes-algo-21.jpg}
-        \end{minipage}
-    \end{center}
+    \centering
+    \includegraphics[width=1\linewidth]{fortunes-algo.jpg}
+    \caption{Алгоритм Форчуна}
 \end{figure}
 
 Алгоритм поддерживает заметающую прямую и береговую линию, которые двигаются по плоскости в процессе работы алгоритма. Заметающая прямая — это прямая, которую мы по традиции можем считать вертикальной и движущейся слева направо. В любой момент работы алгоритма точки из набора слева от заметающей прямой будут включены в диаграмму Вороного, в то время как точки справа от заметающей прямой ещё не отработаны. Береговая линия не является прямой, а является сложной, состоящей из кусочков парабол, кусочно-заданной кривой слева от заметающей прямой. Она отделяет порцию плоскости, внутри которой диаграмма Вороного может быть известна, независимо от других точек справа от заметающей прямой. Для каждой точки слева от заметающей прямой можно определить параболу для точки, которая равноудалена как от этой точки, так и от заметающей прямой. Береговая линия — это граница объединений этих парабол. По мере движения прямой вершины береговой линии, в которых две параболы пересекаются, вычерчивают рёбра диаграммы Вороного. Береговая линия продвигается, сохраняя основание каждой параболы в точности на половину пути между начальным положением заметающей прямой и новой позицией заметающей прямой. Математически это значит, что каждая парабола образуется с помощью заметающей прямой как директрисы, а заданная точка из набора служит фокусом.

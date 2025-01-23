@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.734806mm"
+   height="10.848628mm"
+   viewBox="0 0 32.734806 10.848628"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch2">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer3"
+     transform="translate(-161.16635,-51.296372)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="161.15607"
+       y="53.850784"
+       id="text31"><tspan
+         id="tspan31"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+         x="161.15607"
+         y="53.850784">Δ	= X - Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.05;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="161.01143"
+       y="61.562611"
+       id="text32"><tspan
+         id="tspan32"
+         style="stroke:#000000;stroke-width:0.05;stroke-dasharray:none;stroke-opacity:1"
+         x="161.01143"
+         y="61.562611">⧊ = 7X - 7Y = 7(X - Y)</tspan></text>
+  </g>
+</svg>

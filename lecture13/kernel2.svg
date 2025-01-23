@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="47.531834mm"
+   height="14.469522mm"
+   viewBox="0 0 47.531834 14.469522"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer2"
+     style="display:inline"
+     transform="translate(-31.650348,-102.42332)">
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.08;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.681997;paint-order:markers stroke fill"
+       x="31.481014"
+       y="105.64066"
+       id="text22"><tspan
+         id="tspan22"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08;stroke-dasharray:none;stroke-opacity:0.681997"
+         x="31.481014"
+         y="105.64066">(i * 1) + (h * 2) + (g * 3) + </tspan><tspan
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08;stroke-dasharray:none;stroke-opacity:0.681997"
+         x="31.481014"
+         y="110.93233"
+         id="tspan23">(f * 4) + (e * 5) + (d * 6) + </tspan><tspan
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08;stroke-dasharray:none;stroke-opacity:0.681997"
+         x="31.481014"
+         y="116.22398"
+         id="tspan24">(c * 7) + (b * 8) + (a * 9) </tspan></text>
+  </g>
+</svg>

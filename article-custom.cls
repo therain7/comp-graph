@@ -90,7 +90,7 @@
 \usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,filecolor=black,citecolor=black]{hyperref}
 \usepackage[titletoc]{appendix}
 
-\usepackage{tocloft}
+\usepackage[titles]{tocloft}
 \cftsetindents{section}{0em}{2em}
 \cftsetindents{subsection}{2em}{2.7em}
 
